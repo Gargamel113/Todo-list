@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+</head>
+
+<body>
+    <section id="not-logged-in">
+        <h1 class="text-shadow">Your todo list online</h1>
+        <section id="login-section">
+            <div class="backdrop" id="login-div">
+                <h1 class="text-shadow">Login</h1>
+                <form class="form-style" id="login">
+                    <input class="form-input" id="user-name" type="text" placeholder="username">
+                    <input class="form-input" id="user-pass" type="password" placeholder="password">
+                    <div>
+                        <input class="btn-style btn-hover-style text-shadow" id="login-btn" type="submit" value="Login">
+                        <input class="btn-style btn-hover-style text-shadow" id="cancel-btn" type="submit"
+                            value="Cancel">
+                    </div>
+                </form>
+                <h3 id="wrong-password-or-username-text"></h3>
+            </div>
+        </section>
+
+        <section id="account-section">
+            <div class="backdrop" id="create-account-div">
+                <h1 class="text-shadow">Create Account</h1>
+                <form class="form-style" id="create-account">
+                    <input class="form-input" id="c-user-name" type="text" placeholder="username" required>
+                    <input class="form-input" id="c-user-pass" type="password" placeholder="password" required>
+                    <input class="form-input" id="c-user-pass-confirm" type="password" placeholder="repeat password"
+                        required>
+                    <input class="form-btn btn-hover-style" id="create-account-btn" type="submit" value="Create">
+                </form>
+                <h3 id="accountText"></h3>
+            </div>
+        </section>
+        <a class="text-shadow btn-hover-style" id="create-account-toggle">
+            <h2>Create Account</h2>
+        </a>
+    </section>
+
+    <section id="logged-in-section">
+
+        <section id="todos-section">
+            <div id="logout">
+                <a class="btn-hover-style logout">
+                    <h2>Logout</h2>
+                </a>
+            </div>
+            <div>
+                <form id="new-todo-list-btn">
+                    <input id="new-todo-text-field" class="form-input" type="text" placeholder="New Todo List" required>
+                    <input class="form-btn btn-hover-style" type="submit" value="Add">
+                </form>
+            </div>
+            <ul id="todos-list">
+
+            </ul>
+        </section>
+
+        <section id="todo-section">
+            <div class="backdrop">
+                <div id="todo-header"class="text-shadow">
+                    <a id="go-back-btn"><i class="fas fa-chevron-circle-left"></i></a>
+                    <h2 id="todo-name-title">To Do List</h2>
+                </div>
+                <div id="add-item">
+                    <form id="add-todo">
+                        <input id="item" type="text" placeholder="Item">
+                        <input class="btn-hover-style" id="submit-btn" type="submit" value="Add">
+                    </form>
+                </div>
+                <ul id="todo-list">
+                </ul>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>
